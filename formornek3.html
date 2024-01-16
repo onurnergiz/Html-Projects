@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fieldset</title>
+</head>
+<body>
+    <form>
+        <fieldset><!--Form Elemanlarını bir arada tutmak için kullanılır.-->
+            <legend>Üyelik Bilgileri</legend><!--Birarada tutan alın başlığıdır.-->
+            <label>Ad Soyad:</label><input type="text" name="ad" autofocus="autofocus" required="required">
+        <br/>
+        <br/>
+        <!--required zorunlu giriş yeridir.-->
+        <label>E Posta:</label><input type="email" name="eposta" required="required"><br/><br/>
+        <label>Şifre</label><input type="password" name="sifre"required="required"><br/><br/>
+        <label>Doğum Tarihi: </label><input type="date" required="required"><br/><br/>
+        <input type="submit" value="Gönder"> <input type="reset" value="Temizle">
+        </fieldset>
+    </form>
+</body>
+</html>

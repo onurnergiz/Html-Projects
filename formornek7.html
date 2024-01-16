@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SATIŞ SÖZEŞMESİ</title>
+</head>
+<body>
+    <form action="onay.html">
+        <h2><center><b>ABC Tasarım Programı Kurulum ve Satış Sözleşmesi :)</b></center></h2>
+    <fieldset style="background-color: coral;">
+        <legend><b><h2>Sözleşme Onay</h2></b></legend>
+        <input type="checkbox" name="kutucuk1" required>Aşağıdaki bilgilerin doğruluğunu kabul ediyorum.<br/>
+        <input type="submit" value="Formu Kaydet">
+        <input type="reset" value="Formu Temizle">
+    </fieldset><br/>
+    <fieldset style="background-color: blue;">
+
+        <legend><b><h2>Kişisel Bilgiler</h2></b></legend>
+        <table style="background-color: aqua;">
+            <tr>
+                <td>
+                    Form Güvenlik ID 
+                </td>
+                <td>
+                    <input type="text" name="formId" disabled placeholder="XYZ123">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Ad 
+                </td>
+                <td>
+                    <input type="text" name="ad" placeholder="Adınızı Girin">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Soyad
+                </td>
+                <td>
+                    <input type="text" name="soyad" placeholder="Soyadınızı Girin">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Yaş
+                </td>
+                <td>
+                    <input type="text" name="yaş">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Mail Adresi
+                </td>
+                <td>
+                    <input type="text" name="email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Fotoğraf Ekle
+                </td>
+                <td>
+                    <input type="file" name="resim">
+                </td>
+            </tr>
+        </table>
+
+    </fieldset> 
+    <br/>
+    <br/>
+    <fieldset style="background-color: brown;">
+        <legend><h2><b>Diğer Bilgiler</b></h2></legend>
+        <table style="background-color: chocolate;">
+            <tr>
+                <td colspan="2">
+                    <b>Buradaki Alanlar Mesleki Deneyimi Kapsar</b>
+                </td>
+            </tr>
+            <tr>
+                <td>Sektöre Giriş Tarihi</td>
+                <td>
+                    <input type="date" name="tarih">
+                </td>
+
+            </tr>
+            <tr>
+                <td>Sektör Deneyimi</td>
+                <td>
+                    <input type="radio" name="secenek"> 1-5 Yıl<br/>
+                    <input type="radio" name="secenek"> 6-10 Yıl<br/>
+                    <input type="radio" name="secenek"> 11-15 Yıl<br/>
+                    <input type="radio" name="secenek"> 15  Üzeri Yıl
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Programlama Dilleri
+                </td>
+                <td>
+                    <select name="programlama dilleri" multiple>
+                        <option value="dil1">C#</option>
+                        <option value="dil2">PHP</option>
+                        <option value="dil3">JAVA</option>
+                        <option value="dil4">Python</option>
+                        <option value="dil5">JavaScript</option>
+                    </select>
+                </td>
+                
+            </tr>
+        </table>
+
+    </fieldset>
+    <br/><br/>
+
+    <fieldset style="background-color: blueviolet;">
+        <legend>
+            <h2><b>Sözleşme Kopyası</b></h2>
+        </legend>
+        <textarea cols="40" rows="7" name="sozlesmekopyasi" readonly>
+            ---------------------------------------------------------
+            ---------------------------------------------------------
+            ---------------------------------------------------------
+            ---------------------------------------------------------
+            ---------------------------------------------------------
+            ---------------------------------------------------------
+            ---------------------------------------------------------
+            ---------------------------------------------------------
+            ---------------------------------------------------------
+            ---------------------------------------------------------
+            ---------------------------------------------------------
+            ---------------------------------------------------------
+            ---------------------------------------------------------
+            ---------------------------------------------------------
+            ---------------------------------------------------------
+            ---------------------------------------------------------
+            ---------------------------------------------------------
+            ---------------------------------------------------------
+            ---------------------------------------------------------
+
+
+        </textarea>
+    </fieldset>
+
+    <br/><br/>
+        <fieldset style="background-color: darkgreen;">
+            <legend><h2><b>Mail Listesi</b></h2></legend>
+            <legend></legend>
+            Mail listesine katılmak <b>istiyorum</b><input type="radio" name="onay"><br/>
+            Mail listesine katılmak <b><u>istemiyorum</u></b><input type="radio" name="onay" checked="on">
+        </fieldset>
+
+    </form>
+    
+</body>
+</html>

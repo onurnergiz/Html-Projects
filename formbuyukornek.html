@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SATIŞ SÖZLEŞMESİ</title>
+</head>
+<body>
+    <form action="../Hafta 3/onay.html" method="get" name="satissozlesmesi">
+        <center><h2>ABC Tasarım Programı Kurulum ve Satış Sözleşmesi :)</h2></center>
+        <fieldset style="background-color:coral;">
+            <legend><h2>Sözleşme Onay</h2></legend>
+            <input type="checkbox" name="onayKutusu" required="required"/><label>Aşağıdaki bilgilerin doğruluğunu kabul ediyorum.</label><br/><br/>
+            <input type="submit"  name="gondermeButonu" value="Formu Kaydet"/> <input type="reset"  name="ersetleemButonu" value="Formu Temizle"/>
+        </fieldset>
+        <br/>
+        <fieldset style="background-color: blue;">
+            <legend><h2>Kişisel Bilgiler</h2></legend>
+            <table style="background-color: aqua;">
+                <tr>
+                    <td>Form Güvenlik Id</td>
+                    <td><input type="text" name="id" disabled placeholder="XYZ123" required="required"/></td>
+                </tr>
+                <tr>
+                    <td>Ad</td>
+                    <td><input type="text" name="ad"  placeholder="Adınızı Girin" required="required"/></td>
+                </tr>
+                <tr>
+                    <td>Soyad</td>
+                    <td><input type="text" name="id"  placeholder="Soyadınzı Girin" required="required"/></td>
+                </tr>
+                <tr>
+                    <td>Yaş</td>
+                    <td><input type="number" min="18" max="100" name="yas"  placeholder="Yaşınız" required="required"/></td>
+                </tr>
+                <tr>
+                    <td>Mail Adresi</td>
+                    <td><input type="email" name="mail"  placeholder="E-Mail'inizi Girin" required="required"/></td>
+                </tr>
+                <tr>
+                    <td>Fotoğraf Ekle</td>
+                    <td><input type="file" name="foto" /></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset style="background-color: brown;" name="digerbilgiler">
+            <legend>
+                <h2>Diğer Bilgiler</h2>
+            </legend>
+            <table style="background-color: chocolate;">
+                <tr>
+                    <th colspan="2">
+                        Buradaki Alanlar Mesleki Deneyimi Kapsar</th>
+                </tr>
+                <tr>
+                    <td>
+                        Sektöre Giriş Tarihi
+                    </td>
+                    <td>
+                        <input type="date" name="sektoreGirisTarihi" required="required"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Sektör Deneyimi
+                    </td>
+                    <td>
+                        <input type="radio" name="secenek" required="required"/><label> 1-5 Yıl</label><br/>
+                        <input type="radio" name="secenek"/><label> 6-10 Yıl</label><br/>
+                        <input type="radio" name="secenek"/><label> 11-15 Yıl</label><br/>
+                        <input type="radio" name="secenek"/><label> 15 Üzeri Yıl</label><br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Programlama Dilleri</td>
+                    <td>
+                        <select name="programlamadilleri" multiple>
+                            <option value="none" selected>
+                                Hiçbiri
+                            </option>
+                            <option value="d1">C#</option>
+                            <option value="d2">PHP</option>
+                            <option value="d3">JAVA</option>
+                            <option value="d4">Python</option>
+                            <option value="d5">JavaScript</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset style="background-color:blueviolet;" name="sozlesmekopyasiFieldset">
+            <legend>
+                <h2>Sözleşme Kopyası</h2>
+            </legend>
+            <textarea name="sozlesmekopyasi" cols="30" rows="10" readonly>
+                ---------------------------------------------------------
+                ---------------------------------------------------------
+                ---------------------------------------------------------
+                ---------------------------------------------------------
+            </textarea>
+        </fieldset>
+    
+        <fieldset name="maillistesiFieldset" style="background-color: green;">
+            <legend><h2>Mail Listesi</h2></legend>
+            Mail Listesine katılmak <b>istiyorum.</b><input type="radio" name="secenek" checked="on"/><br/>
+            Mail Listesine Katılmak <b><u>istemiyorum.</u></b><input type="radio" name="secenek"/>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
